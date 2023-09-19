@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap");
+
+:root {
+    --zoomFactor: 2.33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #35654d;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+aside {
+    background-color: #00f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 1rem;
+    margin: 2rem;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto auto;
+    gap: 4rem 3rem;
+}
+.game .stock {
+    grid-column: 1 / 2;
+    /* box-shadow: 2px 2px 0 #00000066; */
+}
+.game .waste {
+    grid-column: 2 / 4;
+    display: flex;
+    border: 1px dotted #333;
+
+    box-shadow: 2px 2px 0 #00000066;
+}
+.game .foundation {
+    grid-column: 4 / 8;
+    display: grid;
+    grid-template-columns: subgrid;
+    border: 1px dotted #333;
+    box-shadow: 2px 2px 0 #00000066;
+}
+.game .tableau {
+    grid-column: 1 / 8;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+.tableau .card {
+    /* margin-top: -8rem; */
+}
+.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    color: #111;
+}
