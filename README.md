@@ -1,9 +1,7 @@
-# React + Vite
+# Solitaire
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-   in early development
+-   so far only 2 days of work
+-   all layout and cards done with CSS (Hello Grid!)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# solitaire
+![Screenshot](Screenshot%20from%202023-09-19%2014-35-26.png)
